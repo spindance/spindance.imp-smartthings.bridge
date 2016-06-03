@@ -1,0 +1,99 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a description of the smartthings authentication api, and the web service api created by the imp-smartthings bridge project",
+    "version": "1.0.0",
+    "title": "SmartThings Electric Imp Example API",
+    "contact": {
+      "name": "API Team",
+      "url": "http://wordnik.com",
+      "email": "apiteam@wordnik.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "graph.api.smartthings.com:443",
+  "basePath": "api/smartapps/installations/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "tags": [
+    {
+      "name": "Authentication",
+      "description": "The authentication endpoint exposed by SmartThings"
+    },
+    {
+      "name": "Directory Services",
+      "description": "The Directory Services endpoint exposed by SmartThings"
+    },
+    {
+      "name": "WebService",
+      "description": "The web service exposed by the SmartApp we wrote inside of SmartThings"
+    }
+  ],
+  "schemes": [
+    "https",
+    "https"
+  ],
+  "paths": {
+    "/api/smartapps/endpoints": {
+      "get": {
+        "tags": [
+          "Directory Services"
+        ],
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oauth/authorize/": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oauth/token": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/values/": {
+      "get": {
+        "tags": [
+          "WebService"
+        ],
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

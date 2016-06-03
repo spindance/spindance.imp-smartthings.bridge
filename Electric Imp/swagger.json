@@ -1,0 +1,52 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Describes the Web Services exposed by the electric imp Agent for the imp-smartthings bridge project",
+    "version": "1.0.0",
+    "title": "Electric Imp Smart Things adapter",
+    "contact": {}
+  },
+  "host": "agent.electricimp.com:443",
+  "basePath": "/XXXXXXXXXXXX",
+  "tags": [
+    {
+      "name": "Root",
+      "description": "Default Name Space"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/oauth/authorize": {
+      "get": {
+        "tags": [
+          "Default"
+        ],
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oauth/callback": {
+      "get": {
+        "tags": [
+          "Default"
+        ],
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
